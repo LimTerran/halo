@@ -3,7 +3,6 @@ package run.halo.app.model.support;
 import org.springframework.http.HttpHeaders;
 
 import java.io.File;
-import java.time.Duration;
 
 /**
  * <pre>
@@ -25,10 +24,26 @@ public class HaloConst {
      */
     public final static String TEMP_DIR = System.getProperties().getProperty("java.io.tmpdir");
 
+    public final static String PROTOCOL_HTTPS = "https://";
+
+    public final static String PROTOCOL_HTTP = "http://";
+
+    public final static String URL_SEPARATOR = "/";
+
     /**
      * Halo backup prefix.
      */
     public final static String HALO_BACKUP_PREFIX = "halo-backup-";
+
+    /**
+     * Halo data export prefix.
+     */
+    public final static String HALO_DATA_EXPORT_PREFIX = "halo-data-export-";
+
+    /**
+     * Static pages pack prefix.
+     */
+    public final static String STATIC_PAGE_PACK_PREFIX = "static-pages-";
 
     /**
      * Default theme name.
@@ -120,7 +135,12 @@ public class HaloConst {
      * Content api token param name
      */
     public final static String API_ACCESS_KEY_QUERY_NAME = "api_access_key";
-    public final static Duration TEMP_TOKEN_EXPIRATION = Duration.ofDays(7);
+
+    public final static String ONE_TIME_TOKEN_QUERY_NAME = "ott";
+
+    public final static String ONE_TIME_TOKEN_HEADER_NAME = "ott";
+
+
     /**
      * user_session
      */
